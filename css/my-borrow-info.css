@@ -1,0 +1,87 @@
+/*头部和导航栏开始*/
+.navbar-nav{
+	margin-left: 50px;
+}
+.navbar{
+	margin-bottom: 8px;
+}
+.container-fluid > .navbar-header{
+	padding-bottom: 10px;
+	padding-top: 12px;
+}
+.navbar-default .navbar-nav > li > a {
+	padding-bottom: 25px;
+	padding-top: 30px;
+}
+.navbar-default .navbar-nav > li > a:hover{
+	background-color: #F0F0F0;
+	color: #337ab7;
+}
+.container-fluid{
+	width: 80%;
+	margin: 0 auto;
+}
+/*头部和导航栏结束*/
+/*借款信息开始*/
+#my_img{
+	height: 94px;
+	display: block;
+	margin: 0 auto;
+}
+.container .col-sm-6 p:first-child{
+	color: #4F99DD;
+	font-size: 22px;
+	font-family: "微软雅黑";
+}
+
+.container .col-sm-6 span,
+.container .col-sm-3 span{
+	margin-left: 40px;
+	color: #0099DD;
+}
+.container span.badge{
+	background-color: #337AB7;
+	border-radius: 3px;
+	margin-left: 0;
+	color: #FFFFFF;
+}
+.container .col-sm-3 .give{
+	color: #4F99DD;
+	font-size: 18px;
+	font-family: "微软雅黑";
+}
+.container .panel{
+	margin-bottom: 30px;
+}
+.container .panel-body .row div{
+	color: #999999;
+}
+.container .panel-body span{
+	color:#0099DD ;
+	margin-left: 4px;
+}
+/*借款信息结束*/
+/*底部开始*/
+#tail{
+	width: 100%;
+	margin-top: 30px;
+	padding-top: 30px;
+	background: #F8F8F8;
+}
+#tail .row{
+	width: 80%;
+	margin: 0 auto;
+}
+#tail nav .a_second{
+	padding-left: 20px;
+}
+#tail .col-sm-2 .imags_1,
+#tail .col-sm-2 .imags_2{
+	width: 160px;
+	height: 70px;
+	display: block;
+}
+#tail .col-sm-2 .imags_2{
+	height: 160px;
+}
+/*底部结束*/

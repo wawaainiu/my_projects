@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>用户登录</title>
+		<link rel="stylesheet" href="../js/bootstrap-3.3.2-dist/css/bootstrap.css" type="text/css" />
+		<link rel="stylesheet" href="../css/core.css" type="text/css" />
+		<link type="text/css" rel="stylesheet" href="../css/account.css" />
+		<link rel="stylesheet" type="text/css" href="../css/my_recharge.css" />
+		<script type="text/javascript" src="../js/jquery/jquery-2.1.3.js"></script>
+		<script type="text/javascript" src="../js/bootstrap-3.3.2-dist/js/bootstrap.js"></script>
+		<script type="text/javascript" src="../js/jquery.bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<!-- 网页顶部导航 -->
+		<div class="el-header">
+			<div class="container" style="position: relative;">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="my_index.html">首页</a>
+					</li>
+					<li>
+						<a href="my_login.html">
+							登录
+						</a>
+					</li>
+					<li>
+						<a href="my_register.html">
+							快速注册
+						</a>
+					</li>
+					<li>
+						<a href="#">帮助</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--logo导航-->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">
+						<img alt="Brand" src="../images/logo.png">
+					</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<p style="margin-top: 30px;font-size: 20px;color: #337AB7;font-family: '微软雅黑';font-weight: bold;">用户注册</p>
+				</div>
+			</div>
+		</nav>
+		<!--中间信息-->
+		<div class="container">
+			<div class="panel panel-default ">
+				<div class="panel-heading">
+					用户注册
+				</div>
+				<div class="panel-body">
+					<form id="registerForm" class="form-horizontal el-register-form" action="register.do" method="post">
+						<p class="h4" style="margin: 10px 10px 20px;color:#999;">请填写注册信息，点击“提交注册”即可完成注册！</p>
+						<div class="form-group">
+							<label class="control-label col-sm-2">用户名</label>
+							<div class="col-sm-6">
+								<input type="text" autocomplete="off" name="username" class="form-control" />
+								<p class="help-block">用户名为2~16位字母，数字，符号或中文</p>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2">密&emsp;码</label>
+							<div class="col-sm-6">
+								<input type="password" autocomplete="off" name="password" class="form-control" />
+								<p class="help-block">密码为6~16位字符组成,采用数字、字母、符号安全性更高</p>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2">确认密码</label>
+							<div class="col-sm-6">
+								<input type="password" autocomplete="off" name="confirmPwd" class="form-control" />
+								<p class="help-block">请再次填写密码</p>
+							</div>
+						</div>
+						<div class="form-gorup">
+							<div class="col-sm-offset-2">
+								<button class="btn btn-success">
+								同意协议并注册  
+							</button> &emsp;&emsp;
+								<a href="login.html" class="text-primary">已有账号，马上登录</a>
+
+								<p style="padding-left: 50px;margin-top: 15px;">
+									<a href="#">《使用协议说明书》</a>
+								</p>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!--底部信息-->
+		<div class="container" id="tail">
+			<div class="row">
+				<div class="col-sm-8">
+					<p>专业Java培训、PHP培训、Android培训机构</p>
+					<p>版权所有： 2006-2016成都源代码教育咨询有限公司</p>
+					<p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+					<p>电  话： 028-86261949 / 400-808-6840  邮箱： yuandaima@itsource.cn</p>
+					<nav>
+						<a href="http://www.miitbeian.gov.cn" target="_blank">蜀ICP备14030149号-1</a>
+						<a href="http://www.gaj.chengdu.gov.cn" target="_blank" class="a_second">蜀公网安备510114990541</a>
+					</nav>
+				</div>
+				<div class="col-sm-2">
+					<p></p>
+					<p>官方微博：</p>
+					<a href="http://t.qq.com/it-source" target="_blank"><img class="imags_1" src="../images/tecent.png" /></a>
+					<a href="http://weibo.com/cditcast" target="_blank"><img class="imags_1" src="../images/sina.png" /></a>
+				</div>
+				<div class="col-sm-2">
+					<p>官方微信：</p>
+					<a href="images/sina.png" target="_blank"><img class="imags_2" src="../images/wx.jpg" /></a>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

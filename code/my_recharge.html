@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../js/bootstrap-3.3.2-dist/css/bootstrap.css" type="text/css" />
+		<link rel="stylesheet" href="../css/core.css" type="text/css" />
+		<link type="text/css" rel="stylesheet" href="../css/account.css" />
+		<link rel="stylesheet" type="text/css" href="../css/my_recharge.css"/>
+		<script type="text/javascript" src="../js/jquery/jquery-2.1.3.js"></script>
+		<script type="text/javascript" src="../js/bootstrap-3.3.2-dist/js/bootstrap.js"></script>
+		<script type="text/javascript" src="../js/jquery.bootstrap.min.js"></script>
+	</head>
+	<body>
+		<!-- 网页顶部导航 -->
+		<div class="el-header">
+			<div class="container" style="position: relative;">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="my_index.html">首页</a>
+					</li>
+					<li>
+						<a href="my_personal.html">
+							娃娃
+						</a>
+					</li>
+					<li>
+						<a href="my_recharge.html" class="el-current-user">
+							账户充值
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							注销
+						</a>
+					</li>
+					<li>
+						<a href="#">帮助</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--logo导航-->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">
+						<img alt="Brand" src="../images/logo.png">
+					</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<p style="margin-top: 30px;font-size: 20px;color: #337AB7;font-family: '微软雅黑';font-weight: bold;">账户充值</p>
+				</div>
+			</div>
+		</nav>
+		<!--中间信息-->
+		<div class="container">
+			<div class="my_header">
+				<h3>信用贷款</h3>
+				<p>1. 由于银行系统的限制，充值功能建议使用 IE 内核（IE8及以上）的浏览器。 </p>
+				<p>2. 请注意：为打击信用卡套现行为，充值资金必须经过投资回款后方能允许提现。</p>
+			</div>
+			<ul class="nav nav-tabs" role="tablist">
+			    <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">线上充值(第三方平台)</a></li>
+			    <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">线下充值</a></li>
+			</ul>
+			<div class="tab-content" style="border: solid 1px #DDDDDD;border-top: 0;padding-left: 20px;">
+			    <div role="tabpanel" class="tab-pane" id="home"><p style="font-size: 18px;color: #A94442;margin:0 auto;width: 280px;">系统暂不支持，请采用线下充值</p></div>
+			    <div role="tabpanel" class="tab-pane active" id="profile">
+			    	<table class="table">
+					  <thead>
+					  	<tr>
+					  		<th>银行名称</th>
+					  		<th>开户人姓名</th>
+					  		<th>银行帐号</th>
+					  		<th>开户行支行名称</th>
+					  	</tr>
+					  </thead>
+					  <tbody>
+					  	<tr>
+					  		<td></td>
+					  		<td>李正兴</td>
+					  		<td>124124124124124124</td>
+					  		<td>府城大道支行</td>
+					  	</tr>
+					  	<tr>
+					  		<td></td>
+					  		<td>李正兴</td>
+					  		<td>124124124124124124</td>
+					  		<td>成都天府新谷支行</td>
+					  	</tr>
+					  	<tr>
+					  		<td></td>
+					  		<td>李正兴</td>
+					  		<td>124124124124124124</td>
+					  		<td>成都高新天府大道支行</td>
+					  	</tr>
+					  </tbody>
+					</table>
+			   		<p style="font-size: 18px;color: #337AB7;">第一步:</p>
+			   		<p style="color: #337AB7;">请选择往以上一个账号汇款或转账您所要充值的金额（若您是跨行转账，推荐选择建行）。注：请保存您的交易记录信息。</p>
+			   		<p style="font-size: 18px;color: #337AB7;">第二步:</p>
+			   		<p style="color: #337AB7;">款或转账成功后，再选择你所汇款或转账的账号，并填写以下完整的信息后，提交您的线下充值申请。我们将会在下个工作日核对您的申请。</p>
+					<form style="margin-left: -250px;" class="form-horizontal el-borrow-form" novalidate="novalidate" method="post" action="${pageContext.request.contextPath}/borrow_normal.do">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">
+								银行
+							</label>
+							<div class="col-sm-4 ">
+								<select class="form-control" name="monthes2Return">
+									<option value="1">工商银行124124124124124(府城大道支行)</option>
+									<option value="3">农业银行124124124124124(成都天府新谷支行)</option>
+									<option value="3">招商银行124124124124124(成都高新天府大道支行)</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-4 control-label">
+								交易号
+							</label>
+							<div class="col-sm-4 ">
+								<input class="form-control" name="currentRate" />
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-4 control-label">
+								充值时间
+							</label>
+							<div class="col-sm-4">
+								<input class="form-control" type="date" name="currentRate" />
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label class="col-sm-4 control-label">
+								充值金额
+							</label>
+							<div class="col-sm-4 ">
+								<input class="form-control" name="currentRate" />
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label class="col-sm-4 control-label">
+								说明
+							</label>
+							<div class="col-sm-7 ">
+								<input class="form-control" name="currentRate" />
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<button style="margin-left: 550px;" class="btn btn-primary col-lg-offset-3" type="submit" data-loading-text="提交">
+								确认提交
+							</button>
+						</div>
+					</form>
+			    </div>
+			  </div>
+		</div>
+		<!--底部信息-->
+		<div class="container" id="tail">
+			<div class="row">
+			  <div class="col-sm-8">
+			  	<p>专业Java培训、PHP培训、Android培训机构</p>
+			  	<p>版权所有： 2006-2016成都源代码教育咨询有限公司</p>
+			  	<p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+			  	<p>电  话： 028-86261949  / 400-808-6840  邮箱： yuandaima@itsource.cn</p>
+			  	<nav>
+			  		<a href="http://www.miitbeian.gov.cn" target="_blank">蜀ICP备14030149号-1</a>
+			  		<a href="http://www.gaj.chengdu.gov.cn" target="_blank" class="a_second">蜀公网安备510114990541</a>
+			  	</nav>
+			  </div>
+			  <div class="col-sm-2">
+			   		<p></p>
+			  	<p>官方微博：</p>
+			  	<a href="http://t.qq.com/it-source" target="_blank"><img class="imags_1" src="../images/tecent.png"/></a>
+			  	<a href="http://weibo.com/cditcast" target="_blank"><img class="imags_1" src="../images/sina.png"/></a>
+			  </div>
+			  <div class="col-sm-2">
+			  	<p>官方微信：</p>
+			  	<a href="images/sina.png" target="_blank"><img class="imags_2" src="../images/wx.jpg"/></a>
+			  </div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,90 @@
+/*头部和导航栏开始*/
+.navbar-nav{
+	margin-left: 50px;
+}
+.navbar{
+	margin-bottom: 8px;
+}
+.container-fluid > .navbar-header{
+	padding-bottom: 10px;
+	padding-top: 12px;
+}
+.navbar-default .navbar-nav > li > a {
+	padding-bottom: 25px;
+	padding-top: 30px;
+}
+.navbar-default .navbar-nav > li > a:hover{
+	background-color: #F0F0F0;
+	color: #337ab7;
+}
+.container-fluid{
+	width: 80%;
+	margin: 0 auto;
+}
+/*头部和导航栏结束*/
+/*左边侧边栏开始*/
+.list-group{
+	margin-bottom: 0px;
+}
+a.list-group-item{
+	color: #337AB7;
+	border-left: 0px;
+	border-right: 0px;
+}
+a.list-group-item:hover{
+	color: #23527C;
+}
+#first_a{
+	border-top: 0px;
+}
+.list-group-item:first-child,.list-group-item:last-child{
+	border-radius: 0px;
+}
+#child .list-group-item{
+	padding-left: 30px;
+	border: 0px;
+}
+#child a.list-group-item:hover{
+	text-decoration: underline;
+}
+.col-sm-3{
+	border: solid 1px #DDDDDD;
+	border-radius: 3px;
+	padding: 0px;
+}
+/*左边侧边栏结束*/
+/*中间借款信息开始*/
+.my_header{
+	background-color:#F4F8FA ;
+	padding: 12px 20px;
+	border-left: solid 1px #0099DD;
+	margin-bottom: 30px;
+}
+.my_header h3{
+	color: #0099DD;
+}
+/*中间借款信息结束*/
+/*底部开始*/
+#tail{
+	width: 100%;
+	margin-top: 30px;
+	padding-top: 30px;
+	background: #F8F8F8;
+}
+#tail .row{
+	width: 80%;
+	margin: 0 auto;
+}
+#tail nav .a_second{
+	padding-left: 20px;
+}
+#tail .col-sm-2 .imags_1,
+#tail .col-sm-2 .imags_2{
+	width: 160px;
+	height: 70px;
+	display: block;
+}
+#tail .col-sm-2 .imags_2{
+	height: 160px;
+}
+/*底部结束*/

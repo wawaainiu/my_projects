@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>账户提现</title>
+		<link rel="stylesheet" href="../js/bootstrap-3.3.2-dist/css/bootstrap.css" type="text/css" />
+		<link rel="stylesheet" href="../css/core.css" type="text/css" />
+		<link type="text/css" rel="stylesheet" href="../css/account.css" />
+		<link rel="stylesheet" type="text/css" href="../css/my_recharge.css"/>
+		<script type="text/javascript" src="../js/jquery/jquery-2.1.3.js"></script>
+		<script type="text/javascript" src="../js/bootstrap-3.3.2-dist/js/bootstrap.js"></script>
+		<script type="text/javascript" src="../js/jquery.bootstrap.min.js"></script>
+	</head>
+	<body>
+		<!-- 网页顶部导航 -->
+		<div class="el-header">
+			<div class="container" style="position: relative;">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="my_index.html">首页</a>
+					</li>
+					<li>
+						<a class="el-current-user" href="my_personal.html">
+							娃娃
+						</a>
+					</li>
+					<li>
+						<a href="my_recharge.html">
+							账户充值
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							注销
+						</a>
+					</li>
+					<li>
+						<a href="#">帮助</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--logo导航-->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">
+						<img alt="Brand" src="../images/logo.png">
+					</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<p style="margin-top: 30px;font-size: 20px;color: #337AB7;font-family: '微软雅黑';font-weight: bold;">账户提现</p>
+				</div>
+			</div>
+		</nav>
+		<!--中间信息-->
+		<div class="container">
+			<div class="my_header">
+				<h3>信用贷款</h3>
+				<p>1. 本平台工作日会处理当天 17:00 之前的提款申请。 </p>
+				<p>2. 为了确保银行转账成功，请您确认银行账号信息的 正确性。</p>
+				<p>3. 单笔提现范围-普通用户500.00 元 ~ 500000.00 元。</p>
+				<p>4. 单笔提现范围-VIP用户500.00 元 ~ 500000.00 元。</p>
+				<p>5. 目前提现服务费：1万元(含) 之内：2.00 元/笔；1万元（以上） ：5.00 元/笔。</p>
+				<p>6. 为避免信用卡套现，故充值15日内未投资提现按提现金额的0.4%收取提现费用。</p>
+				<p>7. 本次可提现 = 可用余额 - 净值保证金 - 不可提现金额 + 投标冻结 - 最高服务费 - 返还体验金。</p>
+			</div>
+			<div class="row" style="margin-left: 20px;font-size: 18px;">
+				<div class="col-sm-4">
+					总金额：<span style="color: #3386CD;">9999元</span>
+				</div>
+				<div class="col-sm-4">
+					可提现金额：<span style="color: #3386CD;">8888元</span>
+				</div>
+				<div class="col-sm-4">
+					冻结金额：<span style="color: #3386CD;">1111元</span>
+				</div>
+			</div>
+			<form style="margin-left: -250px;" class="form-horizontal el-borrow-form" novalidate="novalidate" method="post" action="${pageContext.request.contextPath}/borrow_normal.do">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">
+								银行
+							</label>
+							<div class="col-sm-4 ">
+								<select class="form-control" name="monthes2Return">
+									<option value="1">工商银行</option>
+									<option value="2">农业银行</option>
+									<option value="3">招商银行</option>
+									<option value="4">建设银行</option>
+									<option value="5">中国银行</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-4 control-label">
+								开户行
+							</label>
+							<div class="col-sm-4 ">
+								<input class="form-control" name="currentRate" />
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-4 control-label">
+								银行卡号
+							</label>
+							<div class="col-sm-4 ">
+								<input class="form-control" name="currentRate" />
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label class="col-sm-4 control-label">
+								户主姓名
+							</label>
+							<div class="col-sm-4 ">
+								<input class="form-control" name="currentRate" />
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label class="col-sm-4 control-label">
+								提现金额
+							</label>
+							<div class="col-sm-4 ">
+								<input class="form-control" name="currentRate" />
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-4 control-label">
+								通知电话
+							</label>
+							<div class="col-sm-4 ">
+								<input class="form-control" name="currentRate" />
+							</div>
+						</div>
+						<div class="form-group">
+							<button style="margin-left: 550px;" class="btn btn-primary col-lg-offset-3" type="submit" data-loading-text="提交">
+								确认提交
+							</button>
+						</div>
+					</form>
+		</div>
+		<!--底部信息-->
+		<div class="container" id="tail">
+			<div class="row">
+			  <div class="col-sm-8">
+			  	<p>专业Java培训、PHP培训、Android培训机构</p>
+			  	<p>版权所有： 2006-2016成都源代码教育咨询有限公司</p>
+			  	<p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+			  	<p>电  话： 028-86261949  / 400-808-6840  邮箱： yuandaima@itsource.cn</p>
+			  	<nav>
+			  		<a href="http://www.miitbeian.gov.cn" target="_blank">蜀ICP备14030149号-1</a>
+			  		<a href="http://www.gaj.chengdu.gov.cn" target="_blank" class="a_second">蜀公网安备510114990541</a>
+			  	</nav>
+			  </div>
+			  <div class="col-sm-2">
+			   		<p></p>
+			  	<p>官方微博：</p>
+			  	<a href="http://t.qq.com/it-source" target="_blank"><img class="imags_1" src="../images/tecent.png"/></a>
+			  	<a href="http://weibo.com/cditcast" target="_blank"><img class="imags_1" src="../images/sina.png"/></a>
+			  </div>
+			  <div class="col-sm-2">
+			  	<p>官方微信：</p>
+			  	<a href="images/sina.png" target="_blank"><img class="imags_2" src="../images/wx.jpg"/></a>
+			  </div>
+			</div>
+		</div>
+	</body>
+</html>

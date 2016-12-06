@@ -1,0 +1,51 @@
+.my_header{
+	background-color:#F4F8FA ;
+	padding: 12px 20px;
+	border-left: solid 1px #0099DD;
+}
+.my_header h3{
+	color: #0099DD;
+}
+.my_header p{
+	color: #31708F;
+}
+.my_header p span{
+	margin-left: 40px;
+}
+.page-header h3{
+	color: #333333;
+	font-weight: lighter;
+}
+.page-header h3 small{
+	background-color: #337AB7;
+	color: #FFFFFF;
+	width:60px;
+	height: 22px;
+	padding-left: 4px;
+	padding-right: 4px;
+	border-radius: 6px;
+}
+form .form-group{
+	position: relative;
+}
+form{
+	position: relative;
+}
+form .mook{
+	width: 270px;
+	height: 150px;
+	border: solid 1px #DDDDDD;
+	box-shadow: 2px 2px 12px #DDDDDD;
+	position: absolute;
+	top: 30px;
+	right: 100px;
+}
+form .mook p{
+	margin-left: 20px;
+	color: #31708F;
+}
+form .mook p:first-child{
+	font-size: 18px;
+	color: #000000;
+	margin-top: 15px;
+}

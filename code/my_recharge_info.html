@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../js/bootstrap-3.3.2-dist/css/bootstrap.css" type="text/css" />
+		<link rel="stylesheet" href="../css/core.css" type="text/css" />
+		<link type="text/css" rel="stylesheet" href="../css/account.css" />
+		<link rel="stylesheet" type="text/css" href="../css/my_recharge_info.css"/>
+		<script type="text/javascript" src="../js/jquery/jquery-2.1.3.js"></script>
+		<script type="text/javascript" src="../js/bootstrap-3.3.2-dist/js/bootstrap.js"></script>
+		<script type="text/javascript" src="../js/jquery.bootstrap.min.js"></script>
+	</head>
+	<body>
+		<!-- 网页顶部导航 -->
+		<div class="el-header">
+			<div class="container" style="position: relative;">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="my_index.html">首页</a>
+					</li>
+					<li>
+						<a class="el-current-user" href="my_personal.html">
+							娃娃
+						</a>
+					</li>
+					<li>
+						<a href="my_recharge.html">
+							账户充值
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							注销
+						</a>
+					</li>
+					<li>
+						<a href="#">帮助</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--logo导航-->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">
+						<img alt="Brand" src="../images/logo.png">
+					</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="my_index.html">首页 </a>
+						</li>
+						<li  class="active">
+							<a href="my_invest.html">我要投资</a>
+						</li>
+						<li>
+							<a href="my_borrow.html">我要借款</a>
+						</li>
+						<li>
+							<a href="my_personal.html">个人中心</a>
+						</li>
+						<li>
+							<a href="#">新手指引</a>
+						</li>
+						<li>
+							<a href="#">关于我们</a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</nav>
+		<!--栅格系统侧边栏与中间内容-->
+		<div class="container">
+			<div class="row">
+				<!--左边侧边栏-->
+				<div class="col-sm-3">
+					<div class="list-group">
+						<a href="#" class="list-group-item" id="first_a">投资项目</a>
+						<a href="#" class="list-group-item">借款项目</a>
+					</div>
+					<div class="list-group" id="child">
+						<a href="#" class="list-group-item">借款项目</a>
+						<a href="my_back_money.html" class="list-group-item">还款明细</a>
+					</div>
+					<div class="list-group">
+						<a href="#" class="list-group-item">我的账户</a>
+					</div>
+					<div class="list-group" id="child">
+						<a href="my_personal.html" class="list-group-item">账户信息</a>
+						<a href="my_real_auth.html" class="list-group-item">实名认证</a>
+						<a href="#" class="list-group-item">银行卡管理</a>
+						<a href="#" class="list-group-item">登录记录</a>
+					</div>
+					<div class="list-group">
+						<a href="#" class="list-group-item">资产详情</a>
+					</div>
+					<div class="list-group" id="child">
+						<a href="#" class="list-group-item">账户流水</a>
+						<a href="my_recharge_info.html" class="list-group-item active">充值明细</a>
+						<a href="#" class="list-group-item">提现记录</a>
+						<a href="#" class="list-group-item">收款明细</a>
+					</div>
+					<div class="list-group">
+						<a href="my_user_info.html" class="list-group-item">个人资料</a>
+					</div>
+				</div>
+				<!--右边主体内容-->				
+				<div class="col-sm-9">
+					<div class="panel panel-default">
+					  <div class="panel-heading">充值明细 <a href="my_recharge.html">账户充值</a></div>
+					  <table class="table">
+					  	<thead>
+					  		<tr>
+					  			<th>充值时间</th>
+					  			<th>充值金额</th>
+					  			<th>充值状态</th>
+					  			<th>备注</th>
+					  		</tr>
+					  	</thead>
+					  	<tbody>
+					  		<tr>
+					  			<td>2015-03-11 10:45:10</td>
+					  			<td>500.00</td>
+					  			<td style="color: #3C763D;">充值成功</td>
+					  			<td>线下充值500</td>
+					  		</tr>
+					  	</tbody>
+					  </table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部信息-->
+		<div class="container" id="tail">
+			<div class="row">
+			  <div class="col-sm-8">
+			  	<p>专业Java培训、PHP培训、Android培训机构</p>
+			  	<p>版权所有： 2006-2016成都源代码教育咨询有限公司</p>
+			  	<p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+			  	<p>电  话： 028-86261949  / 400-808-6840  邮箱： yuandaima@itsource.cn</p>
+			  	<nav>
+			  		<a href="http://www.miitbeian.gov.cn" target="_blank">蜀ICP备14030149号-1</a>
+			  		<a href="http://www.gaj.chengdu.gov.cn" target="_blank" class="a_second">蜀公网安备510114990541</a>
+			  	</nav>
+			  </div>
+			  <div class="col-sm-2">
+			  	<p>官方微博：</p>
+			  	<a href="http://t.qq.com/it-source" target="_blank"><img class="imags_1" src="../images/tecent.png"/></a>
+			  	<a href="http://weibo.com/cditcast" target="_blank"><img class="imags_1" src="../images/sina.png"/></a>
+			  </div>
+			  <div class="col-sm-2">
+			  	<p>官方微信：</p>
+			  	<a href="images/sina.png" target="_blank"><img class="imags_2" src="../images/wx.jpg"/></a>
+			  </div>
+			</div>
+		</div>
+	</body>
+</html>

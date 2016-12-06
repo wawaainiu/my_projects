@@ -1,0 +1,96 @@
+/*头部和导航栏开始*/
+.navbar-nav{
+	margin-left: 50px;
+}
+.navbar{
+	margin-bottom: 8px;
+}
+.container-fluid > .navbar-header{
+	padding-bottom: 10px;
+	padding-top: 12px;
+}
+.navbar-default .navbar-nav > li > a {
+	padding-bottom: 25px;
+	padding-top: 30px;
+}
+.navbar-default .navbar-nav > li > a:hover{
+	background-color: #F0F0F0;
+	color: #337ab7;
+}
+.container-fluid{
+	width: 80%;
+	margin: 0 auto;
+}
+/*头部和导航栏结束*/
+/*中间借款信息开始*/
+.main{
+	margin-top: 50px;
+}
+.container .row .panel-heading{
+	background-color: #40D47E;
+}
+.container .row .two_head{
+	background-color: #EC7E20;
+}
+.container .row .three_head{
+	background-color: #2CA2EE;
+}
+.container .row .panel-heading h1{
+	color: #FFFFFF;
+	font-size: 24px;
+}
+.container .row .panel-body{
+	background-color: #F9F9F9;
+}
+.container .row .panel-body .area{
+	color: #999999;
+}
+.container .row .panel-body ul{
+	list-style: none;
+	padding: 0;
+	margin-left: 10px;
+}
+.container .row .panel-body ul li{
+	background: url(../images/sequare.png) no-repeat left center;
+	padding-left: 20px;
+}
+.container .row .panel-body .apply{
+	width: 84px;
+	height: 30px;
+	background-color: #159AD3;
+	border-radius: 14px;
+	text-align: center;
+	line-height: 30px;
+	display: block;
+	color: #FFFFFF;
+	margin: 0 auto;
+	text-decoration: none;
+}
+.container .row .panel-body .apply:hover{
+	background-color: #008FD9;
+}
+/*中间借款信息结束*/
+/*底部开始*/
+#tail{
+	width: 100%;
+	margin-top: 30px;
+	padding-top: 30px;
+	background: #F8F8F8;
+}
+#tail .row{
+	width: 80%;
+	margin: 0 auto;
+}
+#tail nav .a_second{
+	padding-left: 20px;
+}
+#tail .col-sm-2 .imags_1,
+#tail .col-sm-2 .imags_2{
+	width: 160px;
+	height: 70px;
+	display: block;
+}
+#tail .col-sm-2 .imags_2{
+	height: 160px;
+}
+/*底部结束*/
